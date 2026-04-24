@@ -1,182 +1,28 @@
-/* RESET */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* Asegura que las fotos tengan el mismo tamaño sin deformarse */
+.card img {
+    width: 100%;
+    height: 220px; /* Altura fija para que todas sean iguales */
+    object-fit: cover; /* Recorta la imagen para que rellene el espacio sin estirarse */
+    display: block;
 }
 
-/* VARIABLES */
-:root {
-    --color-principal: #2563eb;
-    --color-secundario: #1e293b;
-    --color-fondo: #0f172a;
-    --color-card: #1e293b;
-    --color-texto: #f1f5f9;
-    --radius: 12px;
-}
-
-/* BODY */
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background: var(--color-fondo);
-    color: var(--color-texto);
-}
-
-/* HEADER */
-.header {
-    background: #020617;
-    padding: 15px 20px;
-}
-
-.nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.nav h1 {
-    font-size: 1.8rem;
-}
-
-.nav span {
-    color: var(--color-principal);
-}
-
-.btn-volver {
-    text-decoration: none;
-    color: white;
-    background: var(--color-principal);
-    padding: 8px 14px;
-    border-radius: 6px;
-}
-
-/* HERO */
-.hero {
-    text-align: center;
-    padding: 60px 20px;
-}
-
-.hero h2 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-}
-
-.hero p {
-    font-size: 1.1rem;
-    opacity: 0.8;
-}
-
-/* CONTENEDOR */
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: auto;
-}
-
-/* GRID */
-.pets {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
-    padding: 40px 0;
-}
-
-/* CARD */
+/* Mejora el diseño de la tarjeta */
 .card {
     background: var(--color-card);
     border-radius: var(--radius);
     overflow: hidden;
     text-align: center;
-    padding-bottom: 20px;
-    transition: transform 0.3s ease;
+    padding-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Alinea el contenido uniformemente */
+    border: 1px solid rgba(255, 255, 255, 0.1); /* Un borde sutil queda elegante */
 }
 
-.card:hover {
-    transform: translateY(-5px);
+/* El Grid ya lo tienes bien, pero asegúrate de esto: */
+.pets {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Esto fuerza las 3 columnas */
+    gap: 30px;
+    padding: 40px 0;
 }
-
-/* IMÁGENES */
-.card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-}
-
-/* TEXTO */
-.card h3 {
-    margin: 15px 0 10px;
-    font-size: 1.4rem;
-}
-
-.card p {
-    font-size: 0.95rem;
-    padding: 0 15px;
-    margin-bottom: 15px;
-    opacity: 0.8;
-}
-
-/* BOTÓN */
-.card button {
-    background: var(--color-principal);
-    color: white;
-    border: none;
-    padding: 10px 18px;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 0.9rem;
-}
-
-.card button:hover {
-    background: #1d4ed8;
-}
-
-/* MENSAJE */
-.mensaje {
-    text-align: center;
-    margin: 20px;
-    font-size: 1.2rem;
-    color: #38bdf8;
-}
-
-/* BOTÓN FLOTANTE */
-.btn-flotante {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: var(--color-principal);
-    color: white;
-    padding: 12px 15px;
-    border-radius: 50%;
-    text-decoration: none;
-    font-size: 18px;
-}
-
-/*  RESPONSIVE */
-
-/* TABLET */
-@media (max-width: 900px) {
-    .pets {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .hero h2 {
-        font-size: 2rem;
-    }
-}
-
-/* MÓVIL */
-@media (max-width: 600px) {
-    .pets {
-        grid-template-columns: 1fr;
-    }
-
-    .hero h2 {
-        font-size: 1.7rem;
-    }
-
-    .hero p {
-        font-size: 0.95rem;
-    }
-}
-
-
