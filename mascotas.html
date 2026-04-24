@@ -3,89 +3,88 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mascotas</title>
-  <link rel="stylesheet" href="css/mascotas.css">
+  <title>Mascotas | Andres Dev</title>
+  <link rel="stylesheet" href="mascotas.css">
 </head>
-
 <body>
 
-<!-- HEADER -->
 <header class="header">
   <div class="container nav">
-    <h1>Andres <span>Dev</span></h1>
-
+    <h1>MIS <span>MASCOTAS</span></h1>
     <nav>
-      <a href="index.html" class="btn-volver">← Inicio</a>
+      <a href="index.html" class="btn-volver">← Volver al Inicio</a>
     </nav>
   </div>
 </header>
 
-<!-- HERO -->
 <section class="hero">
-  <h2>Mascotas</h2>
+  <h2>TUS COMPAÑEROS DE VIDA</h2>
   <p>Algunos animales que pueden ser grandes compañeros en tu vida diaria.</p>
 </section>
 
-<!-- GRID -->
-<section class="pets container">
+<main class="container">
+  <section class="pets">
 
-  <!-- PERRO -->
-  <div class="card">
-    <img src="https://images.unsplash.com/photo-1558788353-f76d92427f16" alt="Perro">
-    <h3>Perro</h3>
-    <p>El perro es leal, protector y muy sociable. Es ideal para familias.</p>
-    <button onclick="mostrarInfo('Perro')">Ver más</button>
-  </div>
+    <div class="card">
+      <img src="assets/perro.gif" alt="Perro">
+      <div class="card-content">
+        <h3>Perro</h3>
+        <p>El perro es leal, protector y muy sociable. Es ideal para familias.</p>
+        <button onclick="alert('¡Guau! Soy un perro fiel')">Saber más</button>
+      </div>
+    </div>
 
-  <!-- GATO -->
-  <div class="card">
-    <img src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131" alt="Gato">
-    <h3>Gato</h3>
-    <p>El gato es independiente y limpio. Perfecto para espacios pequeños.</p>
-    <button onclick="mostrarInfo('Gato')">Ver más</button>
-  </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131" alt="Gato">
+      <div class="card-content">
+        <h3>Gato</h3>
+        <p>El gato es independiente y limpio. Perfecto para espacios pequeños.</p>
+        <button onclick="alert('¡Miau! Soy muy independiente')">Saber más</button>
+      </div>
+    </div>
 
-  <!-- CONEJO -->
-  <div class="card">
-    <img src="https://images.unsplash.com/photo-1585110396000-c9ffd4e4b308" alt="Conejo">
-    <h3>Conejo</h3>
-    <p>El conejo es tranquilo, suave y muy tierno. Ideal como mascota doméstica.</p>
-    <button onclick="mostrarInfo('Conejo')">Ver más</button>
-  </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1585110396000-c9ffd4e4b308" alt="Conejo">
+      <div class="card-content">
+        <h3>Conejo</h3>
+        <p>El conejo es tranquilo, suave y muy tierno. Ideal como mascota.</p>
+        <button onclick="alert('¡Soy muy saltarín!')">Saber más</button>
+      </div>
+    </div>
 
-  <!-- LORO -->
-  <div class="card">
-    <img src="https://images.unsplash.com/photo-1555169062-013468b47731" alt="Loro">
-    <h3>Loro</h3>
-    <p>El loro es inteligente y colorido. Puede imitar sonidos y palabras.</p>
-    <button onclick="mostrarInfo('Loro')">Ver más</button>
-  </div>
+    <div class="card">
+      <img src="assets/Scarlet_Macaw_and_Blue-and-gold_Macaw.jpg" alt="Loro">
+      <div class="card-content">
+        <h3>Loro</h3>
+        <p>El loro es inteligente y colorido. Puede imitar sonidos y palabras.</p>
+        <button onclick="alert('¿Quieres hablar conmigo?')">Saber más</button>
+      </div>
+    </div>
 
-  <!-- PEZ -->
-  <div class="card">
-    <img src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29" alt="Pez">
-    <h3>Pez</h3>
-    <p>Los peces son tranquilos y decorativos. Ideales para relajarse.</p>
-    <button onclick="mostrarInfo('Pez')">Ver más</button>
-  </div>
+    <div class="card">
+      <img src="assets/peces.gif" alt="Pez">
+      <div class="card-content">
+        <h3>Pez</h3>
+        <p>Los peces son tranquilos y decorativos. Ideales para relajarse.</p>
+        <button onclick="alert('Glup glup...')">Saber más</button>
+      </div>
+    </div>
 
-  <!-- HAMSTER -->
-  <div class="card">
-    <img src="https://images.unsplash.com/photo-1595433562696-7d684b0a5e0d" alt="Hamster">
-    <h3>Hámster</h3>
-    <p>El hámster es pequeño, activo y fácil de cuidar. Muy popular.</p>
-    <button onclick="mostrarInfo('Hámster')">Ver más</button>
-  </div>
+    <div class="card">
+      <img src="assets/hamster.gif" alt="Hamster">
+      <div class="card-content">
+        <h3>Hámster</h3>
+        <p>El hámster es pequeño, activo y fácil de cuidar. Muy popular.</p>
+        <button onclick="alert('¡Me encanta mi rueda!')">Saber más</button>
+      </div>
+    </div>
 
-</section>
+  </section>
+</main>
 
-<!-- MENSAJE -->
-<div id="mensaje" class="mensaje"></div>
-
-<!-- BOTÓN FLOTANTE -->
-<a href="index.html" class="btn-flotante">🏠</a>
-
-<script src="js/script.js"></script>
+<footer>
+    <p style="text-align: center; padding: 40px; opacity: 0.6;">© Andres Dev - Sección Mascotas</p>
+</footer>
 
 </body>
 </html>
